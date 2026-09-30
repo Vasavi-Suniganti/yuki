@@ -1,0 +1,9 @@
+{
+  "indexes": [
+    {"collectionGroup":"datasets","queryScope":"COLLECTION","fields":[{"fieldPath":"approvalStatus","order":"ASCENDING"},{"fieldPath":"year","order":"DESCENDING"}]},
+    {"collectionGroup":"publications","queryScope":"COLLECTION","fields":[{"fieldPath":"approvalStatus","order":"ASCENDING"},{"fieldPath":"year","order":"DESCENDING"}]},
+    {"collectionGroup":"expeditions","queryScope":"COLLECTION","fields":[{"fieldPath":"region","order":"ASCENDING"},{"fieldPath":"year","order":"DESCENDING"}]},
+    {"collectionGroup":"media","queryScope":"COLLECTION","fields":[{"fieldPath":"approvalStatus","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+  ],
+  "fieldOverrides": []
+}

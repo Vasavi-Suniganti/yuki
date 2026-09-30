@@ -1,0 +1,19 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn(){ return request.auth != null; }
+    function role(){ return signedIn() ? firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role : null; }
+    function canResearch(){ return role() in ['RESEARCHER','researcher_scientist','SCIENTIFIC_REVIEWER','PLATFORM_ADMIN','ncpor_admin']; }
+    function canMedia(){ return role() in ['MEDIA_MANAGER','media_content','SCIENTIFIC_REVIEWER','PLATFORM_ADMIN','ncpor_admin']; }
+    function validSize(){ return request.resource.size < 250 * 1024 * 1024; }
+    function safeType(){ return request.resource.contentType.matches('image/.*|video/.*|audio/.*|application/pdf|text/csv|application/json|application/zip|application/vnd.*'); }
+    match /users/{uid}/{allPaths=**} { allow read, write: if signedIn() && request.auth.uid == uid && validSize() && safeType(); }
+    match /datasets/{id}/{allPaths=**} { allow read: if true; allow write: if canResearch() && validSize() && safeType(); }
+    match /publications/{id}/{allPaths=**} { allow read: if true; allow write: if canResearch() && validSize() && safeType(); }
+    match /documents/{id}/{allPaths=**} { allow read: if true; allow write: if canResearch() && validSize() && safeType(); }
+    match /expeditions/{id}/{allPaths=**} { allow read: if true; allow write: if canResearch() && validSize() && safeType(); }
+    match /media/{allPaths=**} { allow read: if true; allow write: if canMedia() && validSize() && safeType(); }
+    match /samples/{allPaths=**} { allow read: if signedIn(); allow write: if canResearch() && validSize() && safeType(); }
+    match /education/{allPaths=**} { allow read: if true; allow write: if canMedia() && validSize() && safeType(); }
+  }
+}
