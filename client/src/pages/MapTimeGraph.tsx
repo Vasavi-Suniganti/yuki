@@ -5,6 +5,7 @@ import ForceGraph2D from 'react-force-graph-2d';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 import { Play, Pause, FastForward, MapPin, Search, Layers, X, Sparkles } from 'lucide-react';
 import { api } from '../lib/api';
+import { PolarGlobeExplorer } from '../components/PolarGlobeExplorer';
 import { InteractivePolarMap } from '../components/InteractivePolarMap';
 
 export function MapExplorer() {
@@ -36,22 +37,22 @@ export function MapExplorer() {
   return (
     <>
       <PageHero
-        kicker="Geospatial & Spatial Explorer"
-        title="Ask the map where polar science happened."
-        body="Explore research stations, expedition routes, ocean transects, and sampling sites. Query spatial regions to retrieve linked publications and datasets."
+        kicker="Geospatial & Polar Globe Explorer"
+        title="Interactive 3D Polar Globe & Geospatial Mission Hub"
+        body="Explore Antarctic, Arctic, Southern Ocean, and Himalayan research stations, active expedition routes, field sampling sites, open datasets, and peer-reviewed publications on a dedicated interactive polar globe."
       />
 
       <section className="section space-y-6">
         {/* Ask-the-Map Top Bar */}
         <div className="flex justify-between items-center">
-          <SectionTitle kicker="Interactive Research Map" title="Explore Polar Routes, Stations & Sampling Sites" />
+          <SectionTitle kicker="Interactive Research Observatory" title="Explore Polar Routes, Stations & Sampling Sites" />
           <button onClick={() => setShowAskMapModal(true)} className="btn-primary text-xs">
             <Sparkles size={15} /> Ask-the-Map Spatial Query AI
           </button>
         </div>
 
-        {/* Upgraded Interactive Research Map */}
-        <InteractivePolarMap height={640} showSidebar={true} />
+        {/* Upgraded Dedicated Full-Screen Interactive Polar Globe & 2D Map Explorer */}
+        <PolarGlobeExplorer />
 
         {/* Ask the Map Modal */}
         {showAskMapModal && (

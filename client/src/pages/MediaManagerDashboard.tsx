@@ -720,13 +720,13 @@ export function MediaManagerDashboard() {
         {/* Module Navigation Tabs */}
         <div className="flex flex-wrap gap-2 border-b border-[#183647]/15 pb-4 mb-8">
           {[
-            ['dashboard', 'Media Dashboard', FileText],
-            ['storyforge', 'Story Forge Studio (8 Formats)', Sparkles],
-            ['content', 'Content Items Workspace', Edit3],
-            ['library', 'Media Asset Library', ImageIcon],
-            ['aistudio', 'AI Generator Studio', Wand2],
-            ['campaigns', 'Campaign Manager', CalendarDays],
-            ['analytics', 'Media Analytics', BarChart2],
+            ['dashboard', 'Studio', FileText],
+            ['storyforge', 'Story Forge', Sparkles],
+            ['content', 'Stories', Edit3],
+            ['library', 'Media Vault', ImageIcon],
+            ['aistudio', 'AI Studio', Wand2],
+            ['campaigns', 'Campaigns', CalendarDays],
+            ['analytics', 'Analytics', BarChart2],
           ].map(([id, label, Icon]: any) => (
             <button
               key={id}

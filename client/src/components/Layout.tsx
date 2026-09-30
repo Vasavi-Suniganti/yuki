@@ -58,12 +58,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {[
                 ['Expeditions', '/expeditions'],
                 ['Datasets', '/datasets'],
-                ['Publications', '/publications'],
-                ['Map', '/map'],
-                ['Polar AI', '/ai'],
-                ['Education', '/education'],
+                ['Science Papers', '/publications'],
+                ['Globe', '/map'],
+                ['Yuki AI', '/ai'],
+                ['Learn', '/education'],
                 ['Platform Lab', '/platform'],
-                ['News', '/news'],
+                ['Media', '/news'],
               ].map(([l, p]) => (
                 <Link key={p} to={p} className="hover:text-white transition">{l}</Link>
               ))}

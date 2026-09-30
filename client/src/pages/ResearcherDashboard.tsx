@@ -518,13 +518,13 @@ export function ResearcherDashboard() {
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-2 border-b border-[#183647]/15 pb-4">
           {[
-            ['dashboard', 'Overview', Activity],
-            ['reports', 'Research Reports', FileText],
-            ['datasets', 'Datasets Repository', Database],
-            ['publications', 'Publications', BookMarked],
+            ['dashboard', 'Command', Activity],
+            ['workspaces', 'Lab Workspace', Users],
+            ['reports', 'Reports', FileText],
+            ['datasets', 'Datasets', Database],
+            ['publications', 'Science Papers', BookMarked],
             ['media', 'Field Media', ImageIcon],
-            ['outreach', 'Outreach Studio', Sparkles],
-            ['workspaces', 'Team Workspace', Users],
+            ['outreach', 'Outreach', Sparkles],
             ['analytics', 'Analytics', BarChart2],
           ].map(([id, label, Icon]: any) => (
             <button

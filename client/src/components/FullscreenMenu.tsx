@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const menuItems = [
   { num: '01', title: 'Home', path: '/' },
-  { num: '02', title: 'Explore', path: '/explore' },
+  { num: '02', title: 'Discover', path: '/explore' },
   { num: '03', title: 'Expeditions', path: '/expeditions' },
-  { num: '04', title: 'Map Explorer', path: '/map' },
+  { num: '04', title: 'Globe', path: '/map' },
   { num: '05', title: 'Datasets', path: '/datasets' },
-  { num: '06', title: 'Publications', path: '/publications' },
-  { num: '07', title: 'Polar AI', path: '/ai' },
+  { num: '06', title: 'Science Papers', path: '/publications' },
+  { num: '07', title: 'Yuki AI', path: '/ai' },
   { num: '08', title: 'Platform Lab', path: '/platform' },
 ];
 

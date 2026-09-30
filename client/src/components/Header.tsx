@@ -214,52 +214,51 @@ function UserProfileMenu() {
 }
 
 const landingNavLinks: [string, string][] = [
-  ['Discovery', 'discovery'],
-  ['3D Explorer', 'explorer'],
+  ['Discover', 'discovery'],
+  ['Globe', 'explorer'],
   ['Expeditions', 'expeditions'],
-  ['Learning', 'learning'],
+  ['Science', 'learning'],
   ['Scientists', 'scientists'],
-  ['Global Impact', 'impact'],
-  ['Polar AI', 'polar-ai'],
+  ['Media', 'impact'],
+  ['Yuki AI', 'polar-ai'],
 ];
 
 const officialNavLinks: [string, string][] = [
-  ['Dashboard', '/admin'],
-  ['Expeditions', '/expeditions'],
-  ['Verification', '/reviewer'],
-  ['Repository', '/explore'],
+  ['Watch', '/admin'],
+  ['Missions', '/expeditions'],
+  ['Verify', '/reviewer'],
+  ['Vault', '/explore'],
+  ['Globe', '/map'],
   ['Analytics', '/platform'],
   ['Outreach', '/media-manager'],
-  ['3D Map', '/map'],
 ];
 
 const researcherNavLinks: [string, string][] = [
-  ['Dashboard', '/researcher'],
-  ['Expeditions', '/expeditions'],
-  ['3D Map', '/map'],
+  ['Command', '/researcher'],
+  ['Missions', '/expeditions'],
+  ['Globe', '/map'],
   ['Datasets', '/datasets'],
-  ['Publications', '/publications'],
-  ['Polar AI', '/ai'],
+  ['Science', '/publications'],
+  ['Yuki AI', '/ai'],
   ['Outreach', '/media-manager'],
 ];
 
 const mediaNavLinks: [string, string][] = [
-  ['Dashboard', '/media-manager?tab=dashboard'],
-  ['Content', '/media-manager?tab=content'],
-  ['Media Library', '/media-manager?tab=library'],
-  ['AI Studio', '/media-manager?tab=aistudio'],
+  ['Studio', '/media-manager?tab=dashboard'],
+  ['Forge', '/media-manager?tab=storyforge'],
+  ['Stories', '/media-manager?tab=content'],
+  ['Media', '/media-manager?tab=library'],
   ['Campaigns', '/media-manager?tab=campaigns'],
   ['Analytics', '/media-manager?tab=analytics'],
 ];
 
 const studentNavLinks: [string, string][] = [
-  ['Dashboard', '/dashboard'],
-  ['Explore', '/explore'],
+  ['Orbit', '/dashboard'],
+  ['Discover', '/explore'],
   ['Expeditions', '/expeditions'],
-  ['3D Map', '/map'],
-  ['Discover', '/discover'],
+  ['Globe', '/map'],
   ['Learn', '/education'],
-  ['Polar AI', '/ai'],
+  ['Yuki AI', '/ai'],
 ];
 
 export function Header() {

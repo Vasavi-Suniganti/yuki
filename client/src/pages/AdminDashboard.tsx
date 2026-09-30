@@ -398,17 +398,17 @@ export function AdminDashboard() {
         {/* Top Module Navigation Bar */}
         <div className="flex flex-wrap gap-2 border-b border-[#183647]/15 pb-4">
           {[
-            ['overview', 'Official Dashboard', Activity],
-            ['watch', 'National Polar Watch', Eye],
-            ['verification', 'Verification Queue', ShieldCheck],
-            ['expeditions', 'National Expeditions', Globe2],
-            ['repository', 'Repository Governance', DbIcon],
-            ['ai', 'Ask Yuki AI', Sparkles],
+            ['overview', 'Watch', Activity],
+            ['watch', 'National Watch', Eye],
+            ['verification', 'Verify Queue', ShieldCheck],
+            ['expeditions', 'Missions', Globe2],
+            ['repository', 'Vault Governance', DbIcon],
+            ['ai', 'Yuki AI', Sparkles],
             ['users', 'Users & Roles', Users],
             ['audit', 'Audit Logs', Shield],
-            ['identity', 'Identity Resolution', UserCheck],
-            ['analytics', 'Platform Analytics', BarChart2],
-            ['settings', 'System Settings', Settings],
+            ['identity', 'Identity', UserCheck],
+            ['analytics', 'Analytics', BarChart2],
+            ['settings', 'Settings', Settings],
           ].map(([id, label, Icon]: any) => (
             <button
               key={id}

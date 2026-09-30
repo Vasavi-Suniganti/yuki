@@ -53,7 +53,7 @@ export function HomeContent() {
 
             <div className="flex flex-wrap gap-4 pt-2">
               <Link to="/map" className="inline-flex items-center gap-2 rounded-full bg-[#183647] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#254d63] shadow-lg">
-                <Globe2 size={18} /> EXPLORE 3D MAP
+                <Globe2 size={18} /> EXPLORE GLOBE
               </Link>
               <Link to="/education" className="inline-flex items-center gap-2 rounded-full border border-[#183647]/30 bg-white/80 px-6 py-3.5 text-sm font-bold text-[#183647] backdrop-blur-md transition hover:bg-white shadow-md">
                 <BookOpen size={18} /> START LEARNING
@@ -78,13 +78,13 @@ export function HomeContent() {
         <div className="section grid items-center gap-10 lg:grid-cols-2">
           <div>
             <SectionTitle
-              kicker="02 / Interactive Polar Explorer"
+              kicker="02 / Interactive Polar Globe"
               title="Explore research stations & expedition routes."
               body="Click any location to discover connected expeditions, research activities, lead scientists, datasets, and field media."
             />
             <div className="flex gap-3">
               <Link to="/map" className="inline-flex items-center gap-2 rounded-full bg-[#183647] px-6 py-3 text-xs font-bold text-white transition hover:bg-[#254d63] shadow-lg">
-                <Globe2 size={16} /> Open Full 3D Map Explorer
+                <Globe2 size={16} /> Open Polar Globe Explorer
               </Link>
             </div>
           </div>

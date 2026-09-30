@@ -19,7 +19,7 @@ export function SceneFive({ progress }: SceneProps) {
           <Compass size={16} /> Explore <ArrowRight size={14} />
         </Link>
         <Link to="/map" className="inline-flex items-center gap-2 rounded-full border border-[#183647]/25 bg-white/50 px-5 py-3 text-sm font-semibold text-[#183647] backdrop-blur-md transition hover:bg-white/70">
-          <Globe size={16} /> 3D Map
+          <Globe size={16} /> Globe
         </Link>
         <Link to="/datasets" className="inline-flex items-center gap-2 rounded-full border border-[#183647]/25 bg-white/50 px-5 py-3 text-sm font-semibold text-[#183647] backdrop-blur-md transition hover:bg-white/70">
           <Database size={16} /> Datasets
